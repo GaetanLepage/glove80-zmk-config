@@ -18,7 +18,7 @@
 
       firmware = import firmwareSource {inherit pkgs;};
 
-      keymap = ./config/glove80.keymap;
+      keymap = ./glove80.keymap;
 
       glove80_left = firmware.zmk.override {
         board = "glove80_lh";
