@@ -12,8 +12,8 @@
       firmwareSource = pkgs.fetchFromGitHub {
         owner = "moergo-sc";
         repo = "zmk";
-        rev = "f55bf4c1ab81e1e47066ecbaffcf361ed6a275b3";
-        sha256 = "sha256-dVOxuvnXktPZzafVRGAGRrQlNdKS59AsA84riZEq4oQ=";
+        rev = "2a7f8d22273cc057b97a8a04b5ec0e5dc2a89aba";
+        hash = "sha256-dqDjXkG8PuLz9w6VG/uelujsdSmGsenqfmH2DGFlZlo=";
       };
 
       firmware = import firmwareSource {inherit pkgs;};
