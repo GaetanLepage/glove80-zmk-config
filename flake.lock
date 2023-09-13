@@ -1,5 +1,21 @@
 {
   "nodes": {
+    "glove80-zmk": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1694060775,
+        "narHash": "sha256-wDjQxwkgEJJxxja6UqKdzpyy7YA1EByReKFvm/7Vvdo=",
+        "owner": "moergo-sc",
+        "repo": "zmk",
+        "rev": "279bc25747f038d7110c99d1903f2a8f482148b4",
+        "type": "github"
+      },
+      "original": {
+        "owner": "moergo-sc",
+        "repo": "zmk",
+        "type": "github"
+      }
+    },
     "nixpkgs": {
       "locked": {
         "lastModified": 1694422566,
@@ -18,6 +34,7 @@
     },
     "root": {
       "inputs": {
+        "glove80-zmk": "glove80-zmk",
         "nixpkgs": "nixpkgs"
       }
     }

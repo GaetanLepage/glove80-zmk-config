@@ -1,22 +1,22 @@
 {
-  inputs.nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
+  inputs = {
+    nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
+    glove80-zmk = {
+      url = "github:moergo-sc/zmk";
+      flake = false;
+    };
+  };
 
   outputs = {
     self,
     nixpkgs,
+    glove80-zmk
   }: let
     system = "x86_64-linux";
     pkgs = import nixpkgs {inherit system;};
   in {
     packages."x86_64-linux".default = let
-      firmwareSource = pkgs.fetchFromGitHub {
-        owner = "moergo-sc";
-        repo = "zmk";
-        rev = "2a7f8d22273cc057b97a8a04b5ec0e5dc2a89aba";
-        hash = "sha256-dqDjXkG8PuLz9w6VG/uelujsdSmGsenqfmH2DGFlZlo=";
-      };
-
-      firmware = import firmwareSource {inherit pkgs;};
+      firmware = import glove80-zmk {inherit pkgs;};
 
       keymap = ./glove80.keymap;
 
