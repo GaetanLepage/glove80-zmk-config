@@ -3,11 +3,11 @@
     "glove80-zmk": {
       "flake": false,
       "locked": {
-        "lastModified": 1694060775,
-        "narHash": "sha256-wDjQxwkgEJJxxja6UqKdzpyy7YA1EByReKFvm/7Vvdo=",
+        "lastModified": 1699073087,
+        "narHash": "sha256-cAHgBInaKgNMeu4cVEeYrUTuJ0K4bAN2gzEvUW2cI+s=",
         "owner": "moergo-sc",
         "repo": "zmk",
-        "rev": "279bc25747f038d7110c99d1903f2a8f482148b4",
+        "rev": "b96441aea39f61758c2a9d2f0e4fbcdce18d7954",
         "type": "github"
       },
       "original": {
@@ -18,11 +18,11 @@
     },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1698924604,
-        "narHash": "sha256-GCFbkl2tj8fEZBZCw3Tc0AkGo0v+YrQlohhEGJ/X4s0=",
+        "lastModified": 1699099776,
+        "narHash": "sha256-X09iKJ27mGsGambGfkKzqvw5esP1L/Rf8H3u3fCqIiU=",
         "owner": "nixos",
         "repo": "nixpkgs",
-        "rev": "fa804edfb7869c9fb230e174182a8a1a7e512c40",
+        "rev": "85f1ba3e51676fa8cc604a3d863d729026a6b8eb",
         "type": "github"
       },
       "original": {
