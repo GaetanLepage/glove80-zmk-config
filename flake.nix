@@ -53,7 +53,7 @@
 
         devshells.default.commands = [
           {
-            name = "copy";
+            name = "flash";
             command = ''
               set +e
 
