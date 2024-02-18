@@ -57,7 +57,7 @@
             command = ''
               set +e
 
-              root="/run/media/gaetan"
+              root="/run/media/$(whoami)"
               dest_folder_name=$(ls $root | grep GLV80)
 
               if [ -n "$dest_folder_name" ]; then
